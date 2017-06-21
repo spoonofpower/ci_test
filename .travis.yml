@@ -2,6 +2,8 @@ language: go
 
 install:
   - go get mynewt.apache.org/newt/newt
+  - echo "Are we allowed to access the github API?"
+  - curl -v "https://api.github.com/repos/apache/incubator-mynewt-core/contents/repository.yml?ref=master"
   - newt install
 
 script:
