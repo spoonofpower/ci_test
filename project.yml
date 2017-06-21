@@ -1,0 +1,17 @@
+project.name: "ci_test"
+
+project.repositories:
+    - apache-mynewt-core
+    - mynewt_arduino_zero
+
+repository.apache-mynewt-core:
+    type: github
+    vers: 0.0.0
+    user: apache
+    repo: incubator-mynewt-core
+
+repository.mynewt_arduino_zero:
+    type: github
+    vers: 0.0.0
+    user: runtimeinc
+    repo: mynewt_arduino_zero

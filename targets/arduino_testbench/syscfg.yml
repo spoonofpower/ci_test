@@ -1,0 +1,10 @@
+### Package: targets/arduino_testbench
+
+syscfg.vals:
+    LOG_LEVEL: 1
+    BSP_ARDUINO_ZERO: 1
+
+    # Disable some CLI commands to reduce code size.
+    IMGMGR_CLI: 0
+    CONFIG_CLI: 0
+    LOG_CLI: 0
