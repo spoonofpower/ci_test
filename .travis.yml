@@ -5,4 +5,4 @@ install:
   - newt install
 
 script:
-  - find .
+  - newt test all
