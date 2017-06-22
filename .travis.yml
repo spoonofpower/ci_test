@@ -6,6 +6,10 @@ addons:
       - gcc-multilib
       - libc6-i386
 
+cache:
+  directories:
+    - $HOME/tools
+
 install:
   - go get mynewt.apache.org/newt/newt
   - newt install
