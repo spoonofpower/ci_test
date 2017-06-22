@@ -9,7 +9,7 @@ if [[ $GCC_ARM_MD5 != $md5 ]]; then
     exit 1
 fi
 
-mkdir -p /home/travis/tools
-tar -C /home/travis/tools --strip-components=1 -xf /tmp/gcc-arm-none-eabi.tar.bz2
+mkdir -p $HOME/tools
+tar -C $HOME/tools --strip-components=1 -xf /tmp/gcc-arm-none-eabi.tar.bz2
 
 rm /tmp/gcc-arm-none-eabi.tar.bz2

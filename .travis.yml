@@ -12,7 +12,7 @@ install:
 
 before_script:
   - ./install_gcc-arm-none-eabi.sh
-  - export PATH=/home/travis/tools/bin:$PATH
+  - export PATH=$HOME/tools/bin:$PATH
 
 script:
   - newt test all --exclude net/oic
