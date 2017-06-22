@@ -11,4 +11,4 @@ install:
   - newt install
 
 script:
-  - newt test all
+  - newt test all --exclude net/oic
