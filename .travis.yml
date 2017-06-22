@@ -1,5 +1,10 @@
 language: go
 
+addons:
+  apt:
+    packages:
+    - gcc-arm-none-eabi
+
 install:
   - go get mynewt.apache.org/newt/newt
   - newt install
