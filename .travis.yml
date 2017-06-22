@@ -2,10 +2,9 @@ language: go
 
 addons:
   apt:
-    sources:
-      - debian-sid
     packages:
-      - gcc-arm-none-eabi
+      - gcc-multilib
+      - libc6-i386
 
 install:
   - go get mynewt.apache.org/newt/newt
