@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-echo "Dumping the env..."
+echo "Dumping the env from a PR build ..."
 env
 
 if [[ -f $HOME/tools/bin/runtime ]]; then
