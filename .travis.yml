@@ -14,10 +14,12 @@ install:
 - ./install_gcc-arm-none-eabi.sh
 - ./install_runtime.sh
 
+env:
+- TARGET=arduino
+- TARGET=nrf52
+
 script:
-- echo "========== Start =========="
-- env
-- echo "==========  End  =========="
+- ./build.sh $TARGET
 
 env:
   global:
