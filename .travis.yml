@@ -13,15 +13,11 @@ cache:
 install:
 - ./install_gcc-arm-none-eabi.sh
 - ./install_runtime.sh
-- export PATH=$HOME/tools/bin:$PATH
-- go get mynewt.apache.org/newt/newt
-- newt install
 
 script:
-- newt test all --exclude net/oic
-- newt build arduino_testbench
-- newt create-image arduino_testbench 100.0.$TRAVIS_BUILD_NUMBER
-- runtime --host=https://dev.runtime.io build upload -s -g ci --path . --target arduino_testbench
+- echo "========== Start =========="
+- env
+- echo "==========  End  =========="
 
 env:
   global:
