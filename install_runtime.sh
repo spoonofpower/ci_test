@@ -1,11 +1,5 @@
 #!/bin/bash -ex
 
-echo "Dumping the env..."
-env
-
-echo "Is git installed?"
-git status
-
 if [[ -f $HOME/tools/bin/runtime ]]; then
     # Already installed
     exit 0
