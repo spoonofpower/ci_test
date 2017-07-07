@@ -7,5 +7,5 @@ if [[ $target == "newt_testall" ]]; then
 else
     newt build $target
     newt create-image $target 100.0.$TRAVIS_BUILD_NUMBER
-    runtime --host=https://dev.runtime.io build upload -s -g travis --path . --target $target
+    runtime --host=https://dev.runtime.io build upload -s -g $RT_DEVICE_GROUP --path . --target $target
 fi
