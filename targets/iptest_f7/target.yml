@@ -1,0 +1,4 @@
+### Target: targets/iptest_f7
+target.app: "@apache-mynewt-core/apps/iptest"
+target.bsp: "@apache-mynewt-core/hw/bsp/stm32f767-nucleo"
+target.build_profile: "debug"

@@ -1,0 +1,11 @@
+### Package: targets/iptest_f7
+
+syscfg.vals:
+    BUILD_WITH_OIC: "1"
+    OC_TRANSPORT_IP: 1
+    OC_TRANSPORT_IPV4: 1
+    OC_TRANSPORT_IPV6: 1
+    OC_SERVER: 1
+    OC_CLIENT: 1
+    OC_LOGGING: 1
+    OC_DEBUG: 1
