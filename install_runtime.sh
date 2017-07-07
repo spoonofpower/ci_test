@@ -10,5 +10,5 @@ fi
 
 curl -o $HOME/tools/bin/runtime https://s3-us-west-2.amazonaws.com/runtime-dev-download/linux/runtime
 chmod a+x $HOME/tools/bin/runtime
-curl -o $HOME/tools/bin/runtime https://s3-us-west-2.amazonaws.com/runtime-dev-download/linux/runtime-ci
+curl -o $HOME/tools/bin/runtime-ci https://s3-us-west-2.amazonaws.com/runtime-dev-download/linux/runtime-ci
 chmod a+x $HOME/tools/bin/runtime-ci
