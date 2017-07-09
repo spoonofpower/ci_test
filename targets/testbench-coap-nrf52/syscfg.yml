@@ -1,0 +1,8 @@
+syscfg.vals:
+    # Set log level to INFO.  Debug logging reduces BLE throughput.
+    LOG_LEVEL: 1
+
+    BLE_MAX_CONNECTIONS: 4
+
+    TESTBENCH_BLE: 1
+    TESTBENCH_BLE_NAME: '"ci"'
