@@ -29,5 +29,6 @@ env:
 script:
 - git log
 - env
+- git show $TRAVIS_PULL_REQUEST_SHA
 - rt_runner --host https://dev.runtime.io -g $DEVICE_GROUP -j $TARGET ./build.sh $TARGET
 
