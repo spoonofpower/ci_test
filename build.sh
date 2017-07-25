@@ -2,8 +2,6 @@
 
 target=$1
 
-env
-
 if [[ $target == "newt_testall" ]]; then
     newt test all --exclude net/oic
 else

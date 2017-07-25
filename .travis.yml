@@ -28,5 +28,6 @@ env:
 
 script:
 - git log
+- env
 - rt_runner --host https://dev.runtime.io -g $DEVICE_GROUP -j $TARGET ./build.sh $TARGET
 
