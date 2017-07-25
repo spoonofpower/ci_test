@@ -11,6 +11,7 @@ cache:
   - $HOME/tools
 
 install:
+- env
 - ./install_gcc-arm-none-eabi.sh
 - ./install_runtime.sh
 - export PATH=$HOME/tools/bin:$PATH
