@@ -11,7 +11,6 @@ cache:
   - $HOME/tools
 
 install:
-- env
 - ./install_gcc-arm-none-eabi.sh
 - ./install_runtime.sh
 - export PATH=$HOME/tools/bin:$PATH
@@ -28,5 +27,6 @@ env:
   - secure: jjvbUixSUyGqUDS06jSEpEFrHM9NCVRRsWS9A/ElAsgmpyi3YjkOVktzTEoyOv+erHL9SZ7mYO6fDNWyD7bRUVzaEIjuvdwlSS7x2JjbfYzIXgKmfxhFTdajyQpukMIO43g05q5nejNoR7Kbvh41basWN2CcR1RGEg3P0Pr69q05RUvIs/uUApMdK7KOxlQW9RAWmqR5kYdnmxairw/XfZUC+tXK8O79DIBM0464OpaMm8JQe2xGFdgKquYHov15B+y5k7qJhQzOvK/Vc+ubfRJ3ZSIaZ4OkVnX9XbmuTo3TqYWEfxP9XuyCXVFlKOvuiYXX5wCPcn6n/bVVkiHVXSIWA9fQ22xHc36J4H2xebdjaRacAV6FaybPjj2X4y/F7Hjol+elpG6ZOx5MfjxigL3wZCQt98nh1DjxXbaFZUa467esJs47VbkDEsqBhoQNv4+cLhGW2LLAFKJi79lljGd0hh4Gpi0u+RyXUG7YWBpzjZvZk3+5mLGB+6SS2yJR1l1rs3SZjT0wM44sd14KEAhSfeyqrmCX4ej+Ak0F/KbabE6yV6VlfdTnhWet/cJE8GbrbQwUUp9+gGEmtTqzWP24jzzFw7vpTlk3/6OXUD5z89R6GPYjhxTo0MtpeQBX8kMNfg2tKTjL4qcKU0JLuQfKxNFKxX+7L5lGzoBm84c=
 
 script:
+- env
 - rt_runner --host https://dev.runtime.io -g $DEVICE_GROUP -j $TARGET ./build.sh $TARGET
 
