@@ -1,4 +1,6 @@
 pipeline {
+    properties([pipelineTriggers([pollSCM('H/5 * * * *')])])
+
     environment {
         RT_ACCESS_KEY = credentials('RT_ACCESS_KEY')
         RT_SECRET_KEY = credentials('RT_SECRET_KEY')
