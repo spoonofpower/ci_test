@@ -11,8 +11,6 @@ pipeline {
             steps {
                 sh 'env'
                 sh 'git status'
-                echo env.BRANCH_NAME
-                echo env.CHANGE_ID
             }
         }
     }
