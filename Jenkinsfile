@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'env'
                 sh 'git status'
+                sh 'git remote -v'
             }
         }
     }
