@@ -2,6 +2,7 @@
 
 target=$1
 
+
 if [[ $target == "newt_testall" ]]; then
     newt test all --exclude net/oic
 else
