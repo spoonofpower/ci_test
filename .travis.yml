@@ -28,5 +28,7 @@ env:
 
 script:
 - env
+- git status
+- git remote -v
 - rt_runner --host https://dev.runtime.io -g $DEVICE_GROUP -j $TARGET ./build.sh $TARGET
 
