@@ -2,6 +2,10 @@
 
 target=$1
 
+echo "Environment debugging information"
+env
+git status
+git remote -v
 
 if [[ $target == "newt_testall" ]]; then
     newt test all --exclude net/oic
