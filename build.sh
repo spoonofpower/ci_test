@@ -7,6 +7,7 @@ env
 git status
 git remote -v
 git branch --contains $(git rev-parse HEAD)
+git log
 
 if [[ $target == "newt_testall" ]]; then
     newt test all --exclude net/oic
